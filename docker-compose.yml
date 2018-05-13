@@ -1,0 +1,28 @@
+version: "2"
+services:
+  db:
+    image: postgres
+    environment:
+      - POSTGRES_PASSWORD=pass1234
+    volumes:
+      - db:/var/lib/postgresql/data/
+  web:
+    build:
+      context: .
+    image: yong/tracer_service
+    environment:
+      - DEBUG=True
+      - DB_NAME=postgres
+      - DB_USER=postgres
+      - DB_PASSWORD=pass1234
+      - DB_HOST=db
+      - DB_PORT=5432
+      - IN_DOCKER_CONTAINER=1
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    depends_on:
+      - db
+volumes:
+  db:
