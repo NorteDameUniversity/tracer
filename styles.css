@@ -1,0 +1,101 @@
+img.profile-photo {
+    max-width: 296px;
+    max-height: 196px;
+}
+
+body{
+		margin:	0 auto;
+		background-image: url("");
+		font-family: "Roboto","Lucida Grande","DejaVu Sans","Bitstream Vera Sans",Verdana,Arial,sans-serif;
+		background-repeat: no-repeat;
+		background-size: 100% 720px;
+	}
+
+	
+	.container.signup{
+	max-width: 450px;
+	max-height: 396px;
+	padding-left: 20px;
+	text-align: center;
+	background-color: rgba(68,126, 155, 0.5);
+	background-image: url("../static/bootstrap-3.3.7-dist/img/bk3.png");
+	border-radius: 10px;
+	margin: 0 auto;
+	margin-top: 20px;
+	}
+
+	.container.login{
+	width: 560px;
+	text-align: center;
+	background-color: rgba(68,126, 155, 0.5);
+	background-image: url("../static/bootstrap-3.3.7-dist/img/bk3.png");
+	border-radius: 15px;
+	margin: 0 auto;
+	margin-top: 20px;
+
+	}
+
+	.container.logout{
+	width: 550px;
+	text-align: center;
+	background-image: url("../static/bootstrap-3.3.7-dist/img/bk3.png");
+	background-color: rgba(68,126, 155, 0.5);
+	border-radius: 15px;
+	margin: 0 auto;
+	margin-top: 110px;
+
+	}
+
+	.container.profile{
+	width: 800px;
+	text-align: left;
+	background-color: rgba(68,126, 155, 0.5);
+	background-image: url("../static/bootstrap-3.3.7-dist/img/bk3.png");
+	border-radius: 15px;
+	margin: 0 auto;
+	margin-top: 20px;
+	}
+
+	.form_container img{
+	width: 120px;
+	height:120px;
+	margin-top: -60px;
+	margin-bottom: 15px;
+	}
+
+	input[name=login]{
+
+	}
+
+	
+
+	.input{
+	height: 3px;
+	width: 20px;
+	font-size: 15px;
+	margin-bottom: 5px;
+	background-color:#fff;
+	padding-left: 10px;
+	}
+
+    .col-sm-102{
+    height: 3px;
+	width: 20px;
+	font-size: 15px;
+	margin-bottom: 5px;
+	background-color:#fff;
+	padding-left: 10px;
+    }
+
+
+
+    .form-input::before{
+		content:"";
+		position:absolute;
+		font-family:"FontAwesome";
+		padding-left: 5px;
+		color: #9B59B6;
+		padding-top: 5px;
+		font-size: 35px;
+	}
+
