@@ -52,7 +52,7 @@ DATABASES = {
         'NAME': env('DB_NAME', 'tracer'),
         'USER': env('DB_USER', 'postgres'),
         'PASSWORD': env('DB_PASSWORD', 'passwords'),
-        'HOST': env('DB_HOST', 'localhost'),
+        'HOST': env('DB_HOST', 'https://nortedameuniversity.github.io/tracer/'),
         'PORT': env('DB_PORT', 5432)
     }
 }
