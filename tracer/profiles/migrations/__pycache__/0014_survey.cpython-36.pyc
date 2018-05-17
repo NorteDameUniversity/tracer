@@ -1,0 +1,46 @@
+3
+
+~EøZa  ã               @   s:   d dl mZ d dlmZmZ d dlZG dd„ dejƒZdS )é    )Úsettings)Ú
+migrationsÚmodelsNc            +   @   sb  e Zd ZejejƒdBgZejdde	j
+dddddfd	e	jdd
+fde	jdddfd
+e	jddCdDdEdFdGgddfde	j
+ddddfde	j
+ddddfde	j
+ddddfd e	jdd
+fd!e	jdd
+fd"e	jdd
+fd#e	jdd
+fd$e	jdd
+fd%e	jdd
+fd&e	jdd
+fd'e	jdd
+fd(e	jdd
+fd)e	jdd
+fd*e	jdd
+fd+e	jdd
+fd,e	jdd
+fd-e	jdd
+fd.e	jdd
+fd/e	jdd
+fd0e	jdd
+fd1e	jdd
+fd2e	jdd
+fd3e	jdd
+fd4e	jdd
+fd5e	jdd
+fd6e	jdd
+fd7e	jdd
+fd8e	jdd
+fd9e	jdd
+fd:e	jdd
+fd;e	jdd
+fd<e	jddd=fd>e	jejj	jjejd?fg%d@gZdAS )HÚ	MigrationÚprofilesÚ#0013_profile_field_exam_year_passedÚSurveyÚidTFÚID)Úauto_createdÚprimary_keyÚ	serializeÚverbose_nameÚis_presently_employed)ÚdefaultÚyear_started)ÚblankÚnullÚemployment_statusr   úRegular/Permanenté   úContractual/Temporary/Casualé   ú
+Self-employedé   úUnpaid family workeré   úWage/Salary worker)r   Úchoicesr   Újob_positionÚ éd   )r   r   Ú
+max_lengthÚemployerÚemployer_addresséÈ   Úunemployed_advance_studyÚunemployed_family_concernÚunemployed_healthÚunemployed_no_oppÚunemployed_did_not_look_for_jobÚunemployed_lack_experienceÚunemployed_othersÚvalue_faithÚvalue_integrityÚ
+value_respectÚvalue_excellenceÚ
+value_serviceÚsocial_environment_edÚsocial_dialogueÚsocial_spiritualÚsocial_leadershipÚsocial_family_relÚsocial_community_relÚsocial_peace_advocacyÚcompetency_commÚcompetency_analyticalÚcompetency_entrepreneurialÚcompetency_researchÚcompetency_mathÚcompetency_leadershipÚcompetency_human_relÚcompetency_citÚcompetency_learning_efficiencyÚother_ndu_alumni)r   r   Úuser)Ú	on_deleteÚto)ÚnameÚfieldsN)r   r   )r   r   )r   r   )r   r   )r   r   )r   r   )Ú__name__Ú
+__module__Ú__qualname__r   Úswappable_dependencyr   ÚAUTH_USER_MODELÚdependenciesÚCreateModelr   Ú	AutoFieldÚBooleanFieldÚIntegerFieldÚ	CharFieldÚ	TextFieldÚ
+ForeignKeyÚdjangoÚdbÚdeletionÚCASCADEÚ
+operations© rZ   rZ   úAC:\CareerTracker\tracer\tracer\profiles\migrations\0014_survey.pyr      sR   
+r   )Údjango.confr   Ú	django.dbr   r   Údjango.db.models.deletionrU   r   rZ   rZ   rZ   r[   Ú<module>   s   
