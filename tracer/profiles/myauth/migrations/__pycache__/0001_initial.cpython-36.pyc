@@ -1,0 +1,31 @@
+3
+
+}EøZ`  ã               @   s>   d dl Zd dlZd dlmZmZ d dlZG dd„ dejƒZdS )é    N)Ú
+migrationsÚmodelsc               @   sR  e Zd ZdZd:gZejddejdddddfd	ej	d
+d	dfdej
+ddd
+dfdejddddfdej	ddidddej
+jjjƒ gddfdej	ddddfdej	ddddfdejdd d!dfd"ejdd#d$dfd%ejdd&d'dfd(ej
+ejjjd)d*fd+ejdd,d-d.d/d+d0fd1ejdd2d-d.d3d4d0fg
+d.d5dd6œd7ej
+jjjƒ fgd8gZd9S );Ú	MigrationTÚauthÚ$0009_alter_user_last_name_max_lengthÚUserÚidFÚID)Úauto_createdÚprimary_keyÚ	serializeÚverbose_nameÚpasswordé€   )Ú
+max_lengthr
+   Ú
+last_loginz
+last login)ÚblankÚnullr
+   Úis_superuserzPDesignates that this user has all permissions without explicitly assigning them.zsuperuser status)ÚdefaultÚ	help_textr
+   ÚusernameÚuniquez)A user with that username already exists.zFRequired. 150 characters or fewer. Letters, digits and @/./+/-/_ only.é–   )Úerror_messagesr   r   r   Ú
+validatorsr
+   Ú
+first_nameé   z
+first name)r   r   r
+   Ú	last_namez	last nameÚemailéþ   z
+email addressÚis_staffz9Designates whether the user can log into this admin site.zstaff statusÚ	is_activezeDesignates whether this user should be treated as active. Unselect this instead of deleting accounts.ÚactiveÚdate_joinedzdate joined)r   r
+   ÚgroupszaThe groups this user belongs to. A user will get all permissions granted to each of their groups.Úuser_setÚuserz
+auth.Group)r   r   Úrelated_nameÚrelated_query_nameÚtor
+   Úuser_permissionsz#Specific permissions for this user.zauth.Permissionzuser permissionsÚusers)r
+   Úverbose_name_pluralÚabstractÚobjects)ÚnameÚfieldsÚoptionsÚmanagersN)r   r   )Ú__name__Ú
+__module__Ú__qualname__ÚinitialÚdependenciesr   ÚCreateModelr   Ú	AutoFieldÚ	CharFieldÚ
+DateTimeFieldÚBooleanFieldÚdjangoÚcontribr   r   ÚUnicodeUsernameValidatorÚ
+EmailFieldÚutilsÚtimezoneÚnowÚManyToManyFieldÚUserManagerÚ
+operations© rH   rH   ú@C:\CareerTracker\tracer\tracer\myauth\migrations\0001_initial.pyr   	   s*   (r   )Údjango.contrib.auth.modelsr>   Zdjango.contrib.auth.validatorsÚ	django.dbr   r   Zdjango.utils.timezoner   rH   rH   rH   rI   Ú<module>   s   
