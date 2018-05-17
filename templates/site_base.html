@@ -1,0 +1,60 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" {% block html_attrs_extra %}{% endblock %}>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+  <title>{% block head_title %}NDU Tracking System v2018{% endblock %}</title>
+
+  <!-- AngularJS -->
+  <script src="{% static 'angular.min.js' %}"></script>
+
+  <!-- Bootstrap -->
+  <link href="{% static 'bootstrap-3.3.7-dist/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link rel="icon" href="{% static 'bootstrap-3.3.7-dist/img/ndulogo.png' %}" type="image/x-icon" />
+
+  <link href="{% static 'styles.css' %}" rel="stylesheet">
+
+  {% block head_extra %}{% endblock %}
+</head>
+
+<body>
+
+  {% block messages %}
+    {% if messages %}
+      <div class="container">
+        {% for message in messages %}
+            <div{% if message.tags %} class="alert alert-{{ message.tags }}"{% endif %}>{{ message }}</div>
+        {% endfor %}
+      </div>
+    {% endif %}
+  {% endblock %}
+
+  {% block auth_section %}
+    <div class="container">
+      {% if request.user.is_authenticated %}
+        <p>Welcome, {{ request.user.username }}!
+        [<a href="{% url 'account_logout' %}">Sign out</a>]
+        [<a href="{% url 'index' %}">Home</a>]
+        </p>
+      {% else %}
+        <button class="btn btn-default"><a href="{% url 'account_login' %}">Sign in</a></button>
+      {% endif %}
+    </div>
+  {% endblock %}
+
+  {% block content %}{% endblock %}
+
+  <script src="{% static 'jquery-3.3.1.min.js' %}"></script>
+  <script src="{% static 'bootstrap-3.3.7-dist/js/bootstrap.min.js' %}"></script>
+
+  {% block scripts %}{% endblock %}
+
+</body>
+
+</html>
