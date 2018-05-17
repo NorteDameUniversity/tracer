@@ -52,8 +52,8 @@ DATABASES = {
         'NAME': env('DB_NAME', 'tracer'),
         'USER': env('DB_USER', 'postgres'),
         'PASSWORD': env('DB_PASSWORD', 'passwords'),
-        'HOST': env('DB_HOST', 'localhost'),
-        'PORT': env('DB_PORT', 5432)
+        'HOST': env('DB_HOST', 'https://ndutracer.herokuapp.com/'),
+        'PORT': env('DB_PORT', '')
     }
 }
 
